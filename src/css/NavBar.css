@@ -1,0 +1,17 @@
+.navBar{
+    background-color: rgb(231, 231, 231, 0.3)
+}
+
+.navBar .container{
+    margin-left: 40px;
+}
+
+.navBar .container .brand{
+    margin-left: 1.3rem;
+    font-size: 30px;
+    font-family: "Bahnschrift SemiBold";
+}
+
+.links{
+    font-family: "Bahnschrift";
+}
