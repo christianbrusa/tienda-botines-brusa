@@ -1,9 +1,8 @@
 .navBar{
-    background-color: rgb(231, 231, 231, 0.3)
+    background-color: rgb(231, 231, 231, 0.7);
 }
 
 .navBar .container{
-    margin-left: 40px;
 }
 
 .navBar .container .brand{
@@ -14,4 +13,8 @@
 
 .links{
     font-family: "Bahnschrift";
+}
+
+.image1{
+    object-fit:cover;
 }

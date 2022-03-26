@@ -11,14 +11,16 @@ export default class NavBar extends Component {
             <div>
                 <Navbar expand="lg" fixed="top" className="navBar">
                     <Container className="container" fluid>
-                        <img
-                            src="https://res.cloudinary.com/dycoseuyv/image/upload/v1648177612/fulbo5-removebg-preview_irz59j.png"
-                            width="70"
-                            height="50"
-                            className="d-inline-block"
-                            alt=""
-                        />
-                        <Navbar.Brand href="#" className="brand">Botines Alta Gama</Navbar.Brand>
+                        <nav>
+                            <img
+                                src="https://res.cloudinary.com/dycoseuyv/image/upload/v1648177612/fulbo5-removebg-preview_irz59j.png"
+                                width="70"
+                                height="50"
+                                className="d-inline-block"
+                                alt=""
+                            />
+                        </nav>
+                        <Navbar.Brand href="#" className="brand">Botines AG</Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll" className="d-flex2">
                             <Nav
@@ -33,20 +35,18 @@ export default class NavBar extends Component {
                                 </NavDropdown>
                                 <Nav.Link href="#action2" className="links">FAQ</Nav.Link>
                             </Nav>
-                            <Form className="d-flex">
-                                <Button variant="dark" style={{marginLeft:12.5}}>Login</Button>
-                            </Form>
+                            <Button variant="dark" style={{ marginLeft: 12.5 }}>Login</Button>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
                 <div>
-                <img
-                    src="https://res.cloudinary.com/dycoseuyv/image/upload/v1648183836/magista5_u590et.png"
-                    width="100%"
-                    height="500"
-                    className=""
-                    alt=""
-                />
+                    <img
+                        src="https://res.cloudinary.com/dycoseuyv/image/upload/v1648259988/obrablue_2_gkgt6n.jpg"
+                        width="100%"
+                        height="400"
+                        className="image1"
+                        alt=""
+                    />
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum mollitia voluptas explicabo sit vero vel accusamus ipsa, tempore suscipit ad minima sapiente repellendus, quasi ratione necessitatibus aliquam dicta! Iste.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum mollitia voluptas explicabo sit vero vel accusamus ipsa, tempore suscipit ad minima sapiente repellendus, quasi ratione necessitatibus aliquam dicta! Iste.</p>
