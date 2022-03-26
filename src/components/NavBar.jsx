@@ -35,7 +35,7 @@ export default class NavBar extends Component {
                                 </NavDropdown>
                                 <Nav.Link href="#action2" className="links">FAQ</Nav.Link>
                             </Nav>
-                            <Button variant="light" style={{ marginLeft: 12.5 }}>Login</Button>
+                            <Button variant="light" style={{ marginLeft: 12.5, fontFamily:"Bahnschrift" }}>Login</Button>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
