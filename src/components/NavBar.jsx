@@ -20,12 +20,12 @@ export default class NavBar extends Component {
                                 alt=""
                             />
                         </nav>
-                        <Navbar.Brand href="#" className="brand">Botines AG</Navbar.Brand>
+                        <Navbar.Brand href="#" className="brand" id="title">Botines AG</Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll" className="d-flex2">
                             <Nav
                                 className="me-auto my-2 my-lg-0"
-                                style={{ maxHeight: '300px' }} //Responsive
+                                style={{ maxHeight: '300px'}} //Responsive
                             >
                                 <Nav.Link href="#action1" className="links">Inicio</Nav.Link>
                                 <NavDropdown title="Productos" className="links" id="navbarScrollingDropdown">
@@ -35,7 +35,7 @@ export default class NavBar extends Component {
                                 </NavDropdown>
                                 <Nav.Link href="#action2" className="links">FAQ</Nav.Link>
                             </Nav>
-                            <Button variant="dark" style={{ marginLeft: 12.5 }}>Login</Button>
+                            <Button variant="light" style={{ marginLeft: 12.5 }}>Login</Button>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>

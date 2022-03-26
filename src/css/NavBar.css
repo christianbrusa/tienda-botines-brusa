@@ -1,20 +1,27 @@
 .navBar{
-    background-color: rgb(231, 231, 231, 0.7);
-}
-
-.navBar .container{
+    background-color: rgba(25, 25, 26, 0.7);
 }
 
 .navBar .container .brand{
     margin-left: 1.3rem;
     font-size: 30px;
     font-family: "Bahnschrift SemiBold";
+    color: white;
 }
 
 .links{
     font-family: "Bahnschrift";
+    color: rgb(207, 204, 204) !important;
 }
 
 .image1{
     object-fit:cover;
+}
+
+#navbarScrollingDropdown{
+    color: rgb(207, 204, 204);
+}
+
+#title{
+    color: white;
 }
