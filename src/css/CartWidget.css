@@ -1,0 +1,15 @@
+.shopping{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 25px;
+}
+
+#number{
+    color: white;
+    position: absolute;
+    margin-bottom: 0px;
+    bottom: 5px;
+    right: 0px;
+    font-weight: 600;
+}

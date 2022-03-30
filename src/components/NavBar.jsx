@@ -1,4 +1,5 @@
 import "../css/NavBar.css";
+import CartWidget from "./CartWidget";
 import React, { Component } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, NavDropdown, Container, Button, Form, FormControl } from 'react-bootstrap';
@@ -25,7 +26,7 @@ export default class NavBar extends Component {
                         <Navbar.Collapse id="navbarScroll" className="d-flex2">
                             <Nav
                                 className="me-auto my-2 my-lg-0"
-                                style={{ maxHeight: '300px'}} //Responsive
+                                style={{ maxHeight: '300px' }} //Responsive
                             >
                                 <Nav.Link href="#action1" className="links">Inicio</Nav.Link>
                                 <NavDropdown title="Productos" className="links" id="navbarScrollingDropdown">
@@ -35,7 +36,8 @@ export default class NavBar extends Component {
                                 </NavDropdown>
                                 <Nav.Link href="#action2" className="links">FAQ</Nav.Link>
                             </Nav>
-                            <Button variant="light" style={{ marginLeft: 12.5, fontFamily:"Bahnschrift" }}>Login</Button>
+                            <CartWidget />
+                            <Button variant="light" style={{ marginLeft: 12.5, fontFamily: "Bahnschrift" }}>Login</Button>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
