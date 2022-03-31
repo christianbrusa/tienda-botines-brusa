@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ItemListContainer() {
+export default function ItemListContainer({greeting}) {
     return (
         //Fragments
         <>
@@ -13,24 +13,16 @@ export default function ItemListContainer() {
                     alt=""
                 />
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum mollitia voluptas explicabo sit vero vel accusamus ipsa, tempore suscipit ad minima sapiente repellendus, quasi ratione necessitatibus aliquam dicta! Iste.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum mollitia voluptas explicabo sit vero vel accusamus ipsa, tempore suscipit ad minima sapiente repellendus, quasi ratione necessitatibus aliquam dicta! Iste.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum mollitia voluptas explicabo sit vero vel accusamus ipsa, tempore suscipit ad minima sapiente repellendus, quasi ratione necessitatibus aliquam dicta! Iste.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum mollitia voluptas explicabo sit vero vel accusamus ipsa, tempore suscipit ad minima sapiente repellendus, quasi ratione necessitatibus aliquam dicta! Iste.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum mollitia voluptas explicabo sit vero vel accusamus ipsa, tempore suscipit ad minima sapiente repellendus, quasi ratione necessitatibus aliquam dicta! Iste.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum mollitia voluptas explicabo sit vero vel accusamus ipsa, tempore suscipit ad minima sapiente repellendus, quasi ratione necessitatibus aliquam dicta! Iste.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum mollitia voluptas explicabo sit vero vel accusamus ipsa, tempore suscipit ad minima sapiente repellendus, quasi ratione necessitatibus aliquam dicta! Iste.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum mollitia voluptas explicabo sit vero vel accusamus ipsa, tempore suscipit ad minima sapiente repellendus, quasi ratione necessitatibus aliquam dicta! Iste.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum mollitia voluptas explicabo sit vero vel accusamus ipsa, tempore suscipit ad minima sapiente repellendus, quasi ratione necessitatibus aliquam dicta! Iste.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum mollitia voluptas explicabo sit vero vel accusamus ipsa, tempore suscipit ad minima sapiente repellendus, quasi ratione necessitatibus aliquam dicta! Iste.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum mollitia voluptas explicabo sit vero vel accusamus ipsa, tempore suscipit ad minima sapiente repellendus, quasi ratione necessitatibus aliquam dicta! Iste.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum mollitia voluptas explicabo sit vero vel accusamus ipsa, tempore suscipit ad minima sapiente repellendus, quasi ratione necessitatibus aliquam dicta! Iste.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum mollitia voluptas explicabo sit vero vel accusamus ipsa, tempore suscipit ad minima sapiente repellendus, quasi ratione necessitatibus aliquam dicta! Iste.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum mollitia voluptas explicabo sit vero vel accusamus ipsa, tempore suscipit ad minima sapiente repellendus, quasi ratione necessitatibus aliquam dicta! Iste.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum mollitia voluptas explicabo sit vero vel accusamus ipsa, tempore suscipit ad minima sapiente repellendus, quasi ratione necessitatibus aliquam dicta! Iste.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum mollitia voluptas explicabo sit vero vel accusamus ipsa, tempore suscipit ad minima sapiente repellendus, quasi ratione necessitatibus aliquam dicta! Iste.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum mollitia voluptas explicabo sit vero vel accusamus ipsa, tempore suscipit ad minima sapiente repellendus, quasi ratione necessitatibus aliquam dicta! Iste.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum mollitia voluptas explicabo sit vero vel accusamus ipsa, tempore suscipit ad minima sapiente repellendus, quasi ratione necessitatibus aliquam dicta! Iste.</p>
+            <p>{greeting}</p>
+            <p>{greeting}</p>
+            <p>{greeting}</p>
+            <p>{greeting}</p>
+            <p>{greeting}</p>
+            <p>{greeting}</p>
+            <p>{greeting}</p>
+            <p>{greeting}</p>
+            <p>{greeting}</p>
+            <p>{greeting}</p>
         </>
     )
 } 

@@ -6,8 +6,8 @@ import ItemListContainer from './components/ItemListContainer';
 function App() {
   return (
     <>
-    <NavBar></NavBar>
-    <ItemListContainer></ItemListContainer>
+    <NavBar />
+    <ItemListContainer greeting="Esto es una prueba de props" />
     </>
   );
 }
