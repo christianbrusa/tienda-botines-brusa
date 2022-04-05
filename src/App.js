@@ -2,14 +2,17 @@ import React from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
+import ItemCount from './components/ItemCount';
 
 function App() {
   return (
     <>
     <NavBar />
-    <ItemListContainer greeting="Esto es una prueba de props" />
+    <ItemListContainer greeting="" />
     </>
   );
 }
 
 export default App;
+
+
