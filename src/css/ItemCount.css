@@ -1,0 +1,22 @@
+.count{
+    display: flex !important;
+    position: relative;
+    left: 40px;
+    margin: 10px;
+}
+
+.count #add{
+    border-style: double;
+    border-style: initial;
+}
+
+.count #remove{
+    border-style:double;
+    border-style: initial;
+}
+
+.count #quantity{
+    text-align: center;
+    border-radius: 0;
+    border-style: initial;
+}
