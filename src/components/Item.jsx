@@ -6,11 +6,11 @@ import "../css/Item.css";
 
 export default function Item({ id, title, description, price, pictureUrl }) {
 
-    const [stockInicial, setStockInicial] = useState(1);
+    const [initialStock, setInitialStock] = useState(1);
     const [stock, setStock] = useState(5);
 
     function onAdd(num) {
-        setStockInicial(num);
+        setInitialStock(num);
     }
 
     return (
@@ -23,7 +23,7 @@ export default function Item({ id, title, description, price, pictureUrl }) {
                         <Card.Title id="title1">{title}</Card.Title>
                         <Card.Text id="price">{price}</Card.Text>
                         <div className="count">
-                            <ItemCount stockInicial={stockInicial} stock={stock} onAdd={onAdd} />
+                            <ItemCount initialStock={initialStock} stock={stock} onAdd={onAdd} />
                         </div>
                         <Button id="addToCart" variant="outline-primary">Agregar al carrito</Button>
                     </Card.Body>
