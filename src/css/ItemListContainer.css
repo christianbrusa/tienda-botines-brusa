@@ -1,15 +1,9 @@
-.products{
-    display: flex;
-    justify-content: center;
-}
-
 img{
     margin-left: auto;
     margin-right: auto;
 }
 
-#addToCart{
-    display: flex !important;
-    position: relative;
-    left: 20px;
+.ResultProducts{
+    display: flex;
+    justify-content: center;
 }
