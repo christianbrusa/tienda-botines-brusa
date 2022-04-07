@@ -10,7 +10,7 @@ export default function ItemCount({stockInicial, stock, onAdd}) {
     }
 
     function decrementar(){
-        if(stockInicial > 0){
+        if(stockInicial > 1){
             onAdd(stockInicial - 1);
         }
     }
