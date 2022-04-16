@@ -11,12 +11,12 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      
-      <ItemListContainer />
       <NavBar />
-      <ItemDetailContainer/>
 
       <Routes>
+      <Route exact path='/' element={<ItemListContainer />}/>
+      <Route exact path='/categoria/:id' element={<ItemListContainer />}/>
+      <Route exact path='/producto1' element={<ItemDetailContainer/>}/>
       </Routes>
       
       </BrowserRouter>
