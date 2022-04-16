@@ -6,4 +6,5 @@ img{
 .ResultProducts{
     display: flex;
     justify-content: center;
+    max-width: 2000px;
 }

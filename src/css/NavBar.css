@@ -14,7 +14,7 @@
     color: rgb(207, 204, 204) !important;
 }
 
-.image1{
+.banner{
     object-fit:cover;
 }
 
@@ -24,4 +24,8 @@
 
 #title{
     color: white;
+}
+
+.routes{
+    margin: 20px;
 }
