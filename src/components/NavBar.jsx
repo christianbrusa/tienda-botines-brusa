@@ -31,10 +31,10 @@ export default class NavBar extends Component {
                                 style={{ maxHeight: '300px' }} //Responsive
                             >
                                 <div className="routes">
-                                <Link to={`/`}>Inicio</Link>
-                                <Link to={`/categoria/nike`}>Nike</Link>
-                                <Link to={`/categoria/adidas`}>Adidas</Link>
-                                <Link to={`/categoria/puma`}>Puma</Link>
+                                <li><Link id="buttons" to={`/`}>Inicio</Link></li>
+                                <li><Link id="buttons" to={`/categoria/nike`}>Nike</Link></li>
+                                <li><Link id="buttons" to={`/categoria/adidas`}>Adidas</Link></li>
+                                <li><Link id="buttons" to={`/categoria/puma`}>Puma</Link></li>
                                 </div>
                             </Nav>
                             <CartWidget />

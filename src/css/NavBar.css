@@ -9,11 +9,6 @@
     color: white;
 }
 
-.links{
-    font-family: "Bahnschrift";
-    color: rgb(207, 204, 204) !important;
-}
-
 .banner{
     object-fit:cover;
 }
@@ -26,6 +21,21 @@
     color: white;
 }
 
-.routes{
-    margin: 20px;
+.routes li{
+    display: inline;
+    text-decoration: none;
+    padding: 0.7em 0.7em;
+    color: white;
+}
+
+#buttons{
+    color: rgb(207, 204, 204) !important;
+    text-decoration: none;
+    font-family: "Bahnschrift";
+    font-size: 17px;
+}
+
+#buttons:hover{
+    font-size: 20px;
+    color: rgb(222, 221, 221) !important;
 }
