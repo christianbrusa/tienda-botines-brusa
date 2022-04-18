@@ -5,13 +5,16 @@ import Item from "./Item";
 export default function ItemList({ Products }) {
     return (
         //Fragments
-        Products.map(prod => (
+        <div className= "goncy" style={{display:"grid", gridTemplateColumns: "repeat(auto-fill,minmax(250px,1fr))"}}>
+        {Products.map(prod => (
+            
             <Item
-                key={prod.id}
+                id={prod.id}
                 title={prod.title}
                 price={prod.price}
                 pictureUrl={prod.pictureUrl}
             />
-        ))
+        ))}
+        </div>
     )
 } 
