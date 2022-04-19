@@ -32,9 +32,9 @@ export default class NavBar extends Component {
                             >
                                 <div className="routes">
                                 <li><Link id="buttons" to={`/`}>Inicio</Link></li>
-                                <li><Link id="buttons" to={`/categoria/nike`}>Nike</Link></li>
-                                <li><Link id="buttons" to={`/categoria/adidas`}>Adidas</Link></li>
-                                <li><Link id="buttons" to={`/categoria/puma`}>Puma</Link></li>
+                                <li><Link id="buttons" to={`/category/nike`}>Nike</Link></li>
+                                <li><Link id="buttons" to={`/category/adidas`}>Adidas</Link></li>
+                                <li><Link id="buttons" to={`/category/puma`}>Puma</Link></li>
                                 </div>
                             </Nav>
                             <CartWidget />
