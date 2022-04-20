@@ -2,7 +2,7 @@ import "../css/NavBar.css";
 import CartWidget from "./CartWidget";
 import React, { Component } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav, Container, Button, Form, FormControl } from 'react-bootstrap';
+import { Navbar, Nav, Container, Button, FormControl } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'></link>
 
