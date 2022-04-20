@@ -1,24 +1,31 @@
 import React, { useEffect, useState } from "react";
-import Promise2 from '../utils/Promesa2';
+import Promise from '../utils/Promesa';
+import Products from './Products';
 import ItemDetail from "./ItemDetail";
+import { useParams } from "react-router-dom";
 //import "../css/";
 
 export default function ItemDetailContainer() {
 
     const [producto, setProducto] = useState({})
 
-    useEffect(()=>{
-        Promise2()
-        .then((res)=>{
-            setProducto(res);
-            console.log(res);
-        })
-    }, [])
+    const { id } = useParams();
+
+    let selectProduct = {};
+
+    useEffect(() => {
+        selectProduct = Products.filter(item => item.id == id)
+        console.log(selectProduct)
+        setProducto(selectProduct[0])
+
+    }, [id])
 
     return (
         //Fragments
         <>
-            <ItemDetail producto={producto}/>
+            <div>
+            <ItemDetail producto={producto} />
+            </div>
         </>
     )
 } 
