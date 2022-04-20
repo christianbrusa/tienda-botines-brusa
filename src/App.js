@@ -6,6 +6,7 @@ import ItemCount from './components/ItemCount';
 import Item from './components/Item';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemDetailContainer from './components/ItemDetailContainer';
+import ItemNotFound from './components/ItemNotFound';
 
 function App() {
   return (
@@ -14,9 +15,10 @@ function App() {
       <NavBar />
 
       <Routes>
+      <Route exact path='*' element={<ItemNotFound />}/>
       <Route exact path='/' element={<ItemListContainer />}/>
-      <Route exact path='/categoria/:id' element={<ItemListContainer />}/>
-      <Route exact path='/producto1' element={<ItemDetailContainer/>}/>
+      <Route exact path='/category/:id' element={<ItemListContainer />}/>
+      <Route exact path='/item/:id' element={<ItemDetailContainer />}/>
       </Routes>
       
       </BrowserRouter>
