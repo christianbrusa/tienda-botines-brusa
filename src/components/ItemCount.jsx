@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { Button } from "react-bootstrap";
 import "../css/ItemCount.css";
 
-export default function ItemCount({initialStock, stock, onAdd}) {
+export default function ItemCount({initialStock, stock, onAdd, addToCart}) {
 
     function increase(){
         if(initialStock < stock){
@@ -25,6 +26,7 @@ export default function ItemCount({initialStock, stock, onAdd}) {
             <input id= "quantity" type="Cantidad" value={initialStock} size="1"/>
             <button id= "remove" onClick={decrease}>-</button>
             </div>
+            <Button onClick={()=> addToCart(initialStock)} id="addToCart" variant="outline-primary" style={{ fontFamily: "Bahnschrift" }}>Agregar al carrito</Button>
         </>
     )
 } 
