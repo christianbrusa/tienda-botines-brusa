@@ -1,8 +1,26 @@
-import React from "react";
+import React, { Component, useState } from "react";
 import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import ItemCount from "./ItemCount";
+import CartWidget from "./CartWidget";
 import "../css/ItemDetail.css";
 
 export default function ItemDetail({producto}) {
+
+    const [initialStock, setInitialStock] = useState(1);
+    const [stock, setStock] = useState(5);
+
+    function onAdd(num) {
+        setInitialStock(num);
+    }
+
+    const [cartNumber, setcartNumber] = useState(0);
+
+    function addToCart(initialStock) {
+        setcartNumber(initialStock);
+        console.log(initialStock);
+    }
+
     return (
         //Fragments
         <>
@@ -17,7 +35,13 @@ export default function ItemDetail({producto}) {
                     <br></br>
                     <p>{producto.description}</p>
                     <br></br>
-                    <Button variant="outline-primary" style={{ fontFamily: "Bahnschrift" }}>Agregar al carrito</Button>
+                    <div className="count">
+                    {
+                        cartNumber > 0 
+                        ? <Link to="/cart">Terminar mi compra</Link>
+                        : <ItemCount initialStock={initialStock} stock={stock} onAdd={onAdd} addToCart={addToCart}/>
+                    }  
+                    </div>
                 </div>
             </main>
         </>
