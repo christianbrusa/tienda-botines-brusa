@@ -12,7 +12,7 @@ export default function Item({ id, title, description, price, pictureUrl }) {
 
             <div className="products">
                 <Link id="clickOnProduct" to={`/item/${id}`}>
-                <Card key={id} style={{}}>
+                <Card key={id}>
                     <Card.Img variant="top" src={pictureUrl} />
                     <Card.Body>
                         <Card.Title id="title1">{title}</Card.Title>

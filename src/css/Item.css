@@ -4,6 +4,11 @@
     max-width: 280px;
 }
 
+.products :hover{
+    border-top-color: rgb(30, 200, 30);
+    border-top-width: 3px;
+}
+
 #clickOnProduct{
     text-decoration: none;
     padding: 0.7em 0.7em;
@@ -30,3 +35,4 @@ img{
     display: flex;
     justify-content: center;
 }
+
