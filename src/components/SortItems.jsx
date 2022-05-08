@@ -8,8 +8,8 @@ export default function SortItems({menorPrecio, mayorPrecio}) {
         //Fragments
         <>
             <DropdownButton as={ButtonGroup} title="Ordenar por" id="bg-nested-dropdown" variant="outline-secondary">
-                <Dropdown.Item onClick={mayorPrecio}>Mayor precio</Dropdown.Item>
-                <Dropdown.Item onClick={menorPrecio}>Menor precio</Dropdown.Item>
+                <Dropdown.Item id= "DropdownItem" onClick={mayorPrecio}>Mayor precio</Dropdown.Item>
+                <Dropdown.Item id= "DropdownItem" onClick={menorPrecio}>Menor precio</Dropdown.Item>
             </DropdownButton>
         </>
     )
