@@ -3,20 +3,17 @@ import Item from "./Item";
 import SortItems from "./SortItems";
 /*import "../css/";*/
 
-export default function ItemList({Products}) {
-
-    const [filtroPrecioMenor, setFiltroPrecioMenor] = useState([]);
-    const [filtroPrecioMayor, setFiltroPrecioMayor] = useState([]);
+export default function ItemList({Products, setProducts}) {
 
     function mayorPrecio(){
-        let filtroMayor = Products.sort((a, b) => (a.price > b.price ? -1 : 1));
-        setFiltroPrecioMayor(filtroMayor);
+        let filtroMayor = [...Products].sort((a, b) => (a.price > b.price ? -1 : 1));
+        setProducts(filtroMayor);
         console.log(filtroMayor);
     }
 
     function menorPrecio(){
-        let filtroMenor = Products.sort((a, b) => (a.price > b.price ? 1 : -1));
-        setFiltroPrecioMenor(filtroMenor);
+        let filtroMenor = [...Products].sort((a, b) => (a.price > b.price ? 1 : -1));
+        setProducts(filtroMenor);
         console.log(filtroMenor);
     }
 

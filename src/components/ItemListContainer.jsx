@@ -1,5 +1,4 @@
 import React, { Component, useEffect, useState } from "react";
-import { Button, Card } from 'react-bootstrap';
 import Promise from '../utils/Promesa';
 import Products from './Products';
 import ItemList from "./ItemList";
@@ -36,7 +35,7 @@ export default function ItemListContainer() {
         //Fragments
         <>
             <div className="ResultProducts">
-                <ItemList Products={Items} />
+                <ItemList Products={Items} setProducts={setItems}/>
             </div>
         </>
     )
