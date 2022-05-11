@@ -2,7 +2,6 @@ import React, { Component, useState } from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ItemCount from "./ItemCount";
-import CartWidget from "./CartWidget";
 import "../css/ItemDetail.css";
 
 export default function ItemDetail({producto}) {
@@ -25,6 +24,22 @@ export default function ItemDetail({producto}) {
         //Fragments
         <>
             <main class="container">
+                <div>
+                    <ul>
+                        <li id="imageGallery">
+                        <img src="https://res.cloudinary.com/dycoseuyv/image/upload/v1648705117/redobra-removebg-preview_sxlvqd.png" alt="" />
+                        </li>
+                        <li id="imageGallery">
+                        <img src="https://res.cloudinary.com/dycoseuyv/image/upload/v1652230183/redobra2-removebg-preview_nf4mdt.png" alt="" />
+                        </li>
+                        <li id="imageGallery">
+                        <img src="https://res.cloudinary.com/dycoseuyv/image/upload/v1652230183/redobra3-removebg-preview_cofiyz.png" alt="" />
+                        </li>
+                        <li id="imageGallery" style={{padding:"7px"}}>
+                        <img src="https://res.cloudinary.com/dycoseuyv/image/upload/v1652239400/obrared4-removebg-preview_xe02oe.png" alt="" />
+                        </li>
+                    </ul>
+                </div>
                 <div class="left-column">
                     <img src={producto.pictureUrl} alt="" />
                 </div>
