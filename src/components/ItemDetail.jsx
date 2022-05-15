@@ -20,24 +20,23 @@ export default function ItemDetail({producto}) {
         console.log(initialStock);
     }
 
+    if (!producto.gallery) {
+        return null; //componente cargando...
+    }
+
     return (
         //Fragments
         <>
             <main class="container">
                 <div>
                     <ul>
-                        <li id="imageGallery">
-                        <img src="https://res.cloudinary.com/dycoseuyv/image/upload/v1648705117/redobra-removebg-preview_sxlvqd.png" alt="" />
-                        </li>
-                        <li id="imageGallery">
-                        <img src="https://res.cloudinary.com/dycoseuyv/image/upload/v1652230183/redobra2-removebg-preview_nf4mdt.png" alt="" />
-                        </li>
-                        <li id="imageGallery">
-                        <img src="https://res.cloudinary.com/dycoseuyv/image/upload/v1652230183/redobra3-removebg-preview_cofiyz.png" alt="" />
-                        </li>
-                        <li id="imageGallery" style={{padding:"7px"}}>
-                        <img src="https://res.cloudinary.com/dycoseuyv/image/upload/v1652239400/obrared4-removebg-preview_xe02oe.png" alt="" />
-                        </li>
+                        {producto.gallery.map((img, index) => (
+                            <li>
+                                <a href="" id="imageGallery">
+                                    <img src={img} alt="" />
+                                </a>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 <div class="left-column">
@@ -51,14 +50,14 @@ export default function ItemDetail({producto}) {
                     <p>{producto.description}</p>
                     <br></br>
                     <div className="count">
-                    {
-                        cartNumber > 0 
-                        ? <Link to="/cart">Terminar mi compra</Link>
-                        : <ItemCount initialStock={initialStock} stock={stock} onAdd={onAdd} addToCart={addToCart}/>
-                    }  
+                        {
+                            cartNumber > 0
+                            ? <Link to="/cart">Terminar mi compra</Link>
+                            : <ItemCount initialStock={initialStock} stock={stock} onAdd={onAdd} addToCart={addToCart} />
+                        }
                     </div>
                 </div>
             </main>
         </>
     )
-} 
+}
