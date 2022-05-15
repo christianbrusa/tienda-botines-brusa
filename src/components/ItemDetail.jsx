@@ -33,7 +33,7 @@ export default function ItemDetail({producto}) {
                     <ul>
                         {producto.gallery.map((img, index) => (
                             <li>
-                                <a href="" id="imageGallery">
+                                <a id="imageGallery">
                                     <img src={img} alt="" onClick={() => setImgSelec(producto.gallery.indexOf(img))} />
                                 </a>
                             </li>
