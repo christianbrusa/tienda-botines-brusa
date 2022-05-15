@@ -8,6 +8,7 @@ export default function ItemDetail({producto}) {
 
     const [initialStock, setInitialStock] = useState(1);
     const [stock, setStock] = useState(5);
+    const [imgSelec, setImgSelec] = useState(0);
 
     function onAdd(num) {
         setInitialStock(num);
@@ -33,7 +34,7 @@ export default function ItemDetail({producto}) {
                         {producto.gallery.map((img, index) => (
                             <li>
                                 <a href="" id="imageGallery">
-                                    <img src={img} alt="" />
+                                    <img src={img} alt="" onClick={() => setImgSelec(producto.gallery.indexOf(img))} />
                                 </a>
                             </li>
                         ))}
