@@ -41,7 +41,7 @@ export default function ItemDetail({producto}) {
                     </ul>
                 </div>
                 <div class="left-column">
-                    <img src={producto.pictureUrl} alt="" />
+                    <img src={producto.gallery[imgSelec]} alt="" />
                 </div>
                 <div id="right" class="right-column">
                     <h2>{producto.title}</h2>
