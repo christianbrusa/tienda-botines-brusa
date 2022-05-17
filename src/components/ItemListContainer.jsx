@@ -2,6 +2,7 @@ import React, { Component, useEffect, useState } from "react";
 import Promise from '../utils/Promesa';
 import Products from './Products';
 import ItemList from "./ItemList";
+import Footer from './Footer';
 import "../css/ItemListContainer.css";
 import { useParams } from "react-router-dom";
 
@@ -37,6 +38,11 @@ export default function ItemListContainer() {
             <div className="ResultProducts">
                 <ItemList Products={Items} setProducts={setItems}/>
             </div>
+            {
+            Items.length > 0
+            ? <Footer/>
+            : ""
+            }
         </>
     )
 } 
