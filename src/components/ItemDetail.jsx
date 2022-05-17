@@ -33,7 +33,7 @@ export default function ItemDetail({producto}) {
                     <ul>
                         {producto.gallery.map((img, index) => (
                             <li>
-                                <a id="imageGallery">
+                                <a id="imageGallery" style={{border: img === producto.gallery[imgSelec] ? "0.15rem solid rgb(74, 198, 74)" : ""}}>
                                     <img src={img} alt="" onClick={() => setImgSelec(producto.gallery.indexOf(img))} />
                                 </a>
                             </li>
