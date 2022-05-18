@@ -5,6 +5,7 @@ import ItemListContainer from './components/ItemListContainer';
 import ItemCount from './components/ItemCount';
 import Item from './components/Item';
 import Cart from './components/Cart';
+import Footer from './components/Footer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemDetailContainer from './components/ItemDetailContainer';
 import ItemNotFound from './components/ItemNotFound';
@@ -23,6 +24,7 @@ function App() {
       <Route exact path='/cart' element={<Cart />}/>
       </Routes>
       
+      <Footer/>
       </BrowserRouter>
     </>
   );

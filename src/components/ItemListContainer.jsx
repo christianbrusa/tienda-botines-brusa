@@ -41,7 +41,7 @@ export default function ItemListContainer() {
             </div>
             {
             Items.length > 0
-            ? <Footer/>
+            ? ""
             : <Loading/>
             }
         </>
