@@ -2,6 +2,7 @@ import React, { Component, useState } from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ItemCount from "./ItemCount";
+import BackArrow from "./BackArrow";
 import "../css/ItemDetail.css";
 
 export default function ItemDetail({producto}) {
@@ -29,6 +30,7 @@ export default function ItemDetail({producto}) {
         //Fragments
         <>
             <main class="container">
+                <BackArrow/>
                 <div>
                     <ul>
                         {producto.gallery.map((img, index) => (
@@ -41,7 +43,7 @@ export default function ItemDetail({producto}) {
                     </ul>
                 </div>
                 <div class="left-column">
-                    <img src={producto.gallery[imgSelec]} alt="" />
+                    <img src={producto.gallery[imgSelec]} alt="" style={{width:"400px", paddingTop:"35px"}}/>
                 </div>
                 <div id="right" class="right-column">
                     <h2>{producto.title}</h2>
