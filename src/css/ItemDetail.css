@@ -19,17 +19,22 @@
     margin-top: -30px;
 }
 
+/*.left-column:hover img {
+    transform: scale(1.2);
+}*/
+
 h2{
     margin-top: 30px;
+    color: rgb(69, 69, 69);
 }
 
 h4{
-    color: rgb(69, 69, 69);
+    color: rgb(116, 115, 115);
 }
 
 p{
     text-align: left;
-    color: rgb(116, 115, 115);
+    color: rgb(69, 69, 69);
 }
 
 #right{
@@ -47,6 +52,21 @@ h2, h4, p{
     width: 100px;
     height: 100px;
     margin-right: 30px;
-    border: 0.095rem solid rgb(180, 180, 180);
+    border: 0.09rem solid rgb(180, 180, 180);
     margin-bottom: 7px;
+}
+
+li{
+    list-style:none;
+}
+
+#FinishCart{
+    color: white;
+    border-color: white;
+    /*background-color: rgb(74, 198, 74);*/
+    background-color: rgb(210, 64, 64);
+}
+
+#FinishCart:hover{
+    background-color: rgb(198, 74, 74);;
 }

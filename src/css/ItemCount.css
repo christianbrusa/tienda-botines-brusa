@@ -1,22 +1,38 @@
 .count{
     display: flex !important;
     position: relative;
-    left: 40px;
-    margin: 10px;
+    /*left: 40px;
+    margin: 10px;*/
 }
 
 .count #add{
     border-style: double;
     border-style: initial;
+    height: 100%;
+    width: 20px;
 }
 
 .count #remove{
     border-style:double;
     border-style: initial;
+    height: 100%;
+    width: 20px;
 }
 
 .count #quantity{
     text-align: center;
     border-radius: 0;
     border-style: initial;
+    height: 100%;
+    width: 40px;
+}
+
+#addToCart{
+    color: white;
+    border-color: white;
+    background-color: rgb(74, 198, 74);
+}
+
+#addToCart:hover{
+    background-color: rgb(72, 147, 72);
 }

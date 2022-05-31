@@ -55,8 +55,13 @@ export default function ItemDetail({producto}) {
                     <div className="count">
                         {
                             cartNumber > 0
-                            ? <Link to="/cart">Terminar mi compra</Link>
-                            : <ItemCount initialStock={initialStock} stock={stock} onAdd={onAdd} addToCart={addToCart} />
+                                ?
+                                <Link to="/cart">
+                                    <Button id="FinishCart">
+                                        Terminar mi compra
+                                    </Button>
+                                </Link>
+                                : <ItemCount initialStock={initialStock} stock={stock} onAdd={onAdd} addToCart={addToCart} />
                         }
                     </div>
                 </div>
