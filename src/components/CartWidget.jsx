@@ -1,7 +1,12 @@
-import React from "react";
+import React, {useContext} from "react";
+import { Context } from "../context/CartContext";
 import "../css/CartWidget.css";
 
 export default function CartWidget() {
+
+    let {cart} = useContext(Context);
+    console.log("El contenido del carrito es: ", cart);
+
     return (
         //Fragments
         <>
@@ -13,7 +18,7 @@ export default function CartWidget() {
                     className="d-inline-block"
                     alt=""
                 />
-                <p id="number">0</p>
+                <p id="number">{cart.length}</p>
             </div>
         </>
     )

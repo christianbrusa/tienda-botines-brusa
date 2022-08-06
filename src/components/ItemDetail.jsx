@@ -1,4 +1,5 @@
-import React, { Component, useState } from "react";
+import React, { Component, useState, useContext } from "react";
+import { Context } from "../context/CartContext";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ItemCount from "./ItemCount";
@@ -11,6 +12,8 @@ export default function ItemDetail({producto}) {
     const [stock, setStock] = useState(5);
     const [imgSelec, setImgSelec] = useState(0);
 
+    let {addItem} = useContext(Context)
+
     function onAdd(num) {
         setInitialStock(num);
     }
@@ -19,7 +22,8 @@ export default function ItemDetail({producto}) {
 
     function addToCart(initialStock) {
         setcartNumber(initialStock);
-        console.log(initialStock);
+        //console.log(initialStock);
+        addItem(producto.id, initialStock);
     }
 
     if (!producto.gallery) {
