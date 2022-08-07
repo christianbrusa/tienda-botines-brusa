@@ -7,7 +7,7 @@ export default function CartContext({children}) {
     const [cart, setCart] = useState([]);
 
     function addItem(item, quantity){
-        setCart([{item, quantity}])
+        setCart([...cart, [{item, quantity}]])
     }
 
     return (
