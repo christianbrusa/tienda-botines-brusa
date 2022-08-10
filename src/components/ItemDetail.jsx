@@ -23,7 +23,7 @@ export default function ItemDetail({producto}) {
     function addToCart(initialStock) {
         setcartNumber(initialStock);
         //console.log(initialStock);
-        addItem(producto.id, initialStock);
+        addItem(producto.id, producto.title, initialStock, producto.price, producto.gallery[0]);
     }
 
     if (!producto.gallery) {
