@@ -22,12 +22,12 @@ export default function Cart() {
                 <Container fluid>
                     <Row id="product-row">
                         <Col md={5}>
-                        <img id="img-cart" src={cart[0][0].picture}/>
-                        <a>{cart[0][0].title}</a>
+                        <img id="img-cart" src={cart[0].picture}/>
+                        <a>{cart[0].title}</a>
                         </Col>
-                        <Col>{cart[0][0].price}</Col>
-                        <Col>{cart[0][0].quantity}</Col>
-                        <Col>{"$" + cart[0][0].price.split("$")[1] * Number(cart[0][0].quantity)}</Col>
+                        <Col>{cart[0].price}</Col>
+                        <Col>{cart[0].quantity}</Col>
+                        <Col>{"$" + cart[0].price.split("$")[1] * Number(cart[0].quantity)}</Col>
                     </Row>
                 </Container>
             </div>
