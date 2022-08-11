@@ -20,15 +20,19 @@ export default function Cart() {
                     </Row>
                 </Container>
                 <Container fluid>
-                    <Row id="product-row">
-                        <Col md={5}>
-                        <img id="img-cart" src={cart[0].picture}/>
-                        <a>{cart[0].title}</a>
-                        </Col>
-                        <Col>{cart[0].price}</Col>
-                        <Col>{cart[0].quantity}</Col>
-                        <Col>{"$" + cart[0].price.split("$")[1] * Number(cart[0].quantity)}</Col>
-                    </Row>
+                    {
+                        cart.map(function (item, index) {
+                            return <Row id="product-row">
+                                <Col md={5}>
+                                    <img id="img-cart" src={cart[index].picture}/>
+                                    <a>{cart[index].title}</a>
+                                </Col>
+                                <Col>{cart[index].price}</Col>
+                                <Col>{cart[index].quantity}</Col>
+                                <Col>{"$" + cart[index].price.split("$")[1] * Number(cart[index].quantity)}</Col>
+                            </Row>
+                        })
+                    }
                 </Container>
             </div>
         </>
