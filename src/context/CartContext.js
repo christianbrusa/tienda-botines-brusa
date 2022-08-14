@@ -10,10 +10,15 @@ export default function CartContext({children}) {
         setCart([...cart, {item, title, quantity, price, picture}])
     }
 
+    function removeItem(itemId){
+        let newCart = cart.filter(x => x.item != itemId);
+        setCart(newCart)
+    }
+
     return (
         //Fragments
         <>
-        <Context.Provider value={{cart, setCart, addItem}}>
+        <Context.Provider value={{cart, setCart, addItem, removeItem}}>
             {children}
         </Context.Provider>
         </>
