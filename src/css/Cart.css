@@ -9,10 +9,15 @@
     color: rgb(69, 69, 69);
 }
 
-#first-row{
-    border-bottom: 1px solid;
-}
-
 h6{
     color: rgb(69, 69, 69);
+}
+
+.product-list{
+    margin-left: 50px;
+}
+
+#delete-icon{
+    max-width: 20px;
+    margin-left: 5px;
 }
