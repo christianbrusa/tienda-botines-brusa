@@ -15,9 +15,21 @@ h6{
 
 .product-list{
     margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #delete-icon{
     max-width: 20px;
     margin-left: 5px;
+    border-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#delete-button{
+    border-style: none;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
 }
