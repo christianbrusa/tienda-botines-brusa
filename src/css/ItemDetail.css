@@ -63,10 +63,10 @@ li{
 #FinishCart{
     color: white;
     border-color: white;
-    /*background-color: rgb(74, 198, 74);*/
     background-color: rgb(210, 64, 64);
+    margin-left: 25px;
 }
 
 #FinishCart:hover{
-    background-color: rgb(198, 74, 74);;
+    background-color: rgb(141, 21, 45);
 }

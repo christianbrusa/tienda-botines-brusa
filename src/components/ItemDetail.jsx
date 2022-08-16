@@ -60,11 +60,18 @@ export default function ItemDetail({producto}) {
                         {
                             cartNumber > 0
                                 ?
+                                <div>
+                                <Link to="/">
+                                    <Button id="back-to-home">
+                                        Ver mas productos
+                                    </Button>
+                                </Link>
                                 <Link to="/cart">
                                     <Button id="FinishCart">
                                         Terminar mi compra
                                     </Button>
                                 </Link>
+                                </div>
                                 : <ItemCount initialStock={initialStock} stock={stock} onAdd={onAdd} addToCart={addToCart} />
                         }
                     </div>
