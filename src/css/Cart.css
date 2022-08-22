@@ -33,3 +33,53 @@ h6{
     margin: 0px;
     padding: 0px;
 }
+
+.container-checkout{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 25px;
+}
+
+#form-checkout{
+    background-color: rgb(236, 235, 235);
+    color: rgb(69, 69, 69);
+    font-family: 'Bahnschrift';
+    padding: 25px;
+}
+
+#boton-finalizar-compra{
+    text-align: center;
+}
+
+#titulo-checkout{
+    text-align: center;
+    font-size: 22px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#subtotal-row{
+    border-bottom: 1px solid;
+    margin-top: 20px;
+}
+
+#total-row{
+    margin-top: 20px;
+}
+
+#form-data{
+    margin-bottom: 20px;
+}
+
+#subtotal-checkout{
+    display: flex;
+    justify-content: right;
+    font-size: 20px;
+}
+
+#total-checkout{
+    display: flex;
+    justify-content: right;
+    font-size: 20px;
+    color: black;
+}

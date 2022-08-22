@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../context/CartContext";
-import { Col, Row, Container, Button } from "react-bootstrap";
+import { Col, Row, Container, Button, Form } from "react-bootstrap";
 import EmptyCart from "./emptyCart";
 import "../css/Cart.css";
 
@@ -17,9 +17,9 @@ export default function Cart() {
                 <EmptyCart />
                 ||
                 cart.length > 0 &&
-                <div class="row g-0" className="product-list">
+                <div class="row g-0">
                     <div class="col-sm-6 col-md-8">
-                        <Container fluid>
+                        <Container fluid className="product-list">
                             <Row id="first-row">
                                 <Col md={5}><h6>Producto</h6></Col>
                                 <Col><h6>Precio</h6></Col>
@@ -45,6 +45,51 @@ export default function Cart() {
                                     </Row>
                                 })
                             }
+                        </Container>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <Container className="container-checkout">
+                            <Form id="form-checkout">
+                                <Row>
+                                    <label id="titulo-checkout">RESUMEN DE COMPRA</label>
+                                </Row>
+                                <div id="form-data">
+                                    <Row>
+                                        <Col>
+                                            <label>Cupón de descuento</label>
+                                        </Col>
+                                        <Col>
+                                            <Form.Control placeholder="Código" />
+                                        </Col>
+                                    </Row>
+                                    <Row id="subtotal-row">
+                                        <Col>
+                                        <div>
+                                            <label>Subtotal</label>
+                                        </div>
+                                        </Col>
+                                        <Col>
+                                            <label id="subtotal-checkout">$100.000</label>
+                                        </Col>
+                                    </Row>
+                                    <Row id="total-row">
+                                        <Col>
+                                            <div>
+                                                <label>Total</label>
+                                            </div>
+                                        </Col>
+                                        <Col>
+                                            <label id="total-checkout">$100.000</label>
+                                        </Col>
+                                    </Row>
+                                </div>
+                                <Row>
+                                    <div id="boton-finalizar-compra">
+                                        <Button variant="success" id="boton-finalizar-compra">Finalizar compra</Button>
+                                    </div>
+                                </Row>
+
+                            </Form>
                         </Container>
                     </div>
                 </div>
