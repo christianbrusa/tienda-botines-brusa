@@ -9,6 +9,8 @@ export default function Cart() {
     let { cart, removeItem } = useContext(Context)
     //console.log(cart)
 
+    let totalPurchase = cart.reduce((initialValue, actualValue) => initialValue + actualValue.quantity * actualValue.price, 0);
+
     return (
         //Fragments
         <>
@@ -69,7 +71,7 @@ export default function Cart() {
                                         </div>
                                         </Col>
                                         <Col>
-                                            <label id="subtotal-checkout">$100.000</label>
+                                            <label id="subtotal-checkout">${totalPurchase}</label>
                                         </Col>
                                     </Row>
                                     <Row id="total-row">
@@ -79,7 +81,7 @@ export default function Cart() {
                                             </div>
                                         </Col>
                                         <Col>
-                                            <label id="total-checkout">$100.000</label>
+                                            <label id="total-checkout">${totalPurchase}</label>
                                         </Col>
                                     </Row>
                                 </div>
