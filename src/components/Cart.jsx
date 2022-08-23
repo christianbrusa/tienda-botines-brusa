@@ -36,7 +36,7 @@ export default function Cart() {
                                         </Col>
                                         <Col>{cart[index].price}</Col>
                                         <Col>{cart[index].quantity}</Col>
-                                        <Col>{"$" + cart[index].price.split("$")[1] * Number(cart[index].quantity)}</Col>
+                                        <Col>{"$" + Number(cart[index].price) * Number(cart[index].quantity)}</Col>
                                         <Col>
                                             <button id="delete-button" onClick={() => removeItem(cart[index].item)}>
                                                 <img id="delete-icon" src="https://res.cloudinary.com/dycoseuyv/image/upload/v1660421069/basura-icon_rtsfvm.png" />
