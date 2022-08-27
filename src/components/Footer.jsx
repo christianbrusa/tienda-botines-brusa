@@ -6,9 +6,9 @@ export default function Footer() {
         //Fragments
         <>
             <img
-                src="https://res.cloudinary.com/dycoseuyv/image/upload/v1652672317/solid1_bnscqs.jpg"
+                src="https://res.cloudinary.com/dycoseuyv/image/upload/v1653170746/solid1_zxbgwt.jpg"
                 width="100%"
-                height="350"
+                height="300"
                 className="footer"
                 alt=""
             />

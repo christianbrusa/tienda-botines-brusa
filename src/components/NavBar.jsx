@@ -16,9 +16,9 @@ export default class NavBar extends Component {
                     <Container className="container" fluid>
                         <nav>
                             <img
-                                src="https://res.cloudinary.com/dycoseuyv/image/upload/v1648177612/fulbo5-removebg-preview_irz59j.png"
-                                width="70"
-                                height="50"
+                                src="https://res.cloudinary.com/dycoseuyv/image/upload/v1653364655/logotest4-removebg-preview_pcygls.png"
+                                width="110"
+                                height="70"
                                 className="d-inline-block"
                                 alt="/"
                             />

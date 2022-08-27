@@ -45,6 +45,8 @@ h6{
     color: rgb(69, 69, 69);
     font-family: 'Bahnschrift';
     padding: 25px;
+    padding-top: 10px;
+    margin-right: 50px;
 }
 
 #boton-finalizar-compra{
