@@ -52,7 +52,7 @@ export default function ItemDetail({producto}) {
                 <div id="right" class="right-column">
                     <h2>{producto.title}</h2>
                     <br></br>
-                    <h4>{producto.price}</h4>
+                    <h4>${producto.price}</h4>
                     <br></br>
                     <p>{producto.description}</p>
                     <br></br>

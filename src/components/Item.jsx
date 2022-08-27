@@ -16,7 +16,7 @@ export default function Item({ id, title, description, price, pictureUrl }) {
                     <Card.Img variant="top" src={pictureUrl} />
                     <Card.Body>
                         <Card.Title id="title1">{title}</Card.Title>
-                        <Card.Text id="price">{price}</Card.Text>
+                        <Card.Text id="price">${price}</Card.Text>
                     </Card.Body>
                 </Card>
                 </Link>

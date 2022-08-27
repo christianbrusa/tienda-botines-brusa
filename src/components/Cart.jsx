@@ -36,7 +36,7 @@ export default function Cart() {
                                             <img id="img-cart" src={cart[index].picture}/>
                                             <a>{cart[index].title}</a>
                                         </Col>
-                                        <Col>{cart[index].price}</Col>
+                                        <Col>${cart[index].price}</Col>
                                         <Col>{cart[index].quantity}</Col>
                                         <Col>{"$" + Number(cart[index].price) * Number(cart[index].quantity)}</Col>
                                         <Col>
