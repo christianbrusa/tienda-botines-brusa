@@ -1,5 +1,6 @@
 import "../css/NavBar.css";
 import CartWidget from "./CartWidget";
+import SearchBar from "./SearchBar";
 import React, { Component } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, Container, Button, FormControl } from 'react-bootstrap';
@@ -31,12 +32,13 @@ export default class NavBar extends Component {
                                 style={{ maxHeight: '300px' }} //Responsive
                             >
                                 <div className="routes">
-                                <li><Link id="buttons" to={`/`}>Inicio</Link></li>
-                                <li><Link id="buttons" to={`/category/nike`}>Nike</Link></li>
-                                <li><Link id="buttons" to={`/category/adidas`}>Adidas</Link></li>
-                                <li><Link id="buttons" to={`/category/puma`}>Puma</Link></li>
+                                    <li><Link id="buttons" to={`/`}>Inicio</Link></li>
+                                    <li><Link id="buttons" to={`/category/nike`}>Nike</Link></li>
+                                    <li><Link id="buttons" to={`/category/adidas`}>Adidas</Link></li>
+                                    <li><Link id="buttons" to={`/category/puma`}>Puma</Link></li>
                                 </div>
                             </Nav>
+                            <SearchBar />
                             <CartWidget />
                             <Button variant="light" style={{ marginLeft: 12.5, fontFamily: "Bahnschrift" }}>Login</Button>
                         </Navbar.Collapse>
