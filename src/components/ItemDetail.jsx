@@ -4,6 +4,7 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ItemCount from "./ItemCount";
 import BackArrow from "./BackArrow";
+import Loading from './Loading';
 import "../css/ItemDetail.css";
 
 export default function ItemDetail({producto}) {
@@ -27,7 +28,7 @@ export default function ItemDetail({producto}) {
     }
 
     if (!producto.gallery) {
-        return null; //componente cargando...
+        return <Loading/>
     }
 
     return (
