@@ -15,7 +15,6 @@ export default function ItemListContainer() {
 
     const useQuery = () => new URLSearchParams(useLocation().search);
     const query = useQuery();
-    console.log(query.get('search'));
 
     let filterProducts = [];
 
@@ -28,6 +27,13 @@ export default function ItemListContainer() {
             let collection = res.docs.map((item) => ({id: item.id, ...item.data()}));
             if (id) {
                 filterProducts = collection.filter(item => item.category == id);
+                console.log(filterProducts);
+                Promise(2000, filterProducts)
+                    .then(result => setItems(result))
+                    .catch(error => console.log("error"));
+            }
+            else if(query.get('search')){
+                filterProducts = collection.filter(item => item.title.toLowerCase().includes(query.get('search').toLowerCase()));
                 console.log(filterProducts);
                 Promise(2000, filterProducts)
                     .then(result => setItems(result))
