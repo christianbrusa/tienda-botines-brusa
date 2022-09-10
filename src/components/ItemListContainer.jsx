@@ -4,7 +4,7 @@ import ItemList from "./ItemList";
 import Footer from './Footer';
 import Loading from './Loading';
 import "../css/ItemListContainer.css";
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 import { collection, getDocs, getFirestore } from "firebase/firestore";
 
 export default function ItemListContainer() {
@@ -12,6 +12,10 @@ export default function ItemListContainer() {
     const [Items, setItems] = useState([]);
 
     const { id } = useParams();
+
+    const useQuery = () => new URLSearchParams(useLocation().search);
+    const query = useQuery();
+    console.log(query.get('search'));
 
     let filterProducts = [];
 
