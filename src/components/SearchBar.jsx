@@ -18,6 +18,11 @@ export default function SearchBar() {
                 search: `?search=${text}`
             });
         }
+        document.addEventListener("keyup", function(e) {
+            if (e.key === "Enter") {
+                window.location.reload();
+            }
+        });
     }, [text])
 
     return (
