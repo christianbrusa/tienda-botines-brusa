@@ -3,6 +3,7 @@ import Promise from '../utils/Promesa';
 import ItemList from "./ItemList";
 import Footer from './Footer';
 import Loading from './Loading';
+import ItemNotFound from "./ItemNotFound";
 import "../css/ItemListContainer.css";
 import { useParams, useLocation } from "react-router-dom";
 import { collection, getDocs, getFirestore } from "firebase/firestore";
@@ -10,6 +11,8 @@ import { collection, getDocs, getFirestore } from "firebase/firestore";
 export default function ItemListContainer() {
 
     const [Items, setItems] = useState([]);
+
+    const [isNotFound, setIsNotFound] = useState(false);
 
     const { id } = useParams();
 
@@ -34,6 +37,9 @@ export default function ItemListContainer() {
             }
             else if(query.get('search')){
                 filterProducts = collection.filter(item => item.title.toLowerCase().includes(query.get('search').toLowerCase()));
+                if (filterProducts.length == 0){
+                    setIsNotFound(true);
+                }
                 console.log(filterProducts);
                 Promise(2000, filterProducts)
                     .then(result => setItems(result))
@@ -57,6 +63,8 @@ export default function ItemListContainer() {
             {
             Items.length > 0
             ? ""
+            : isNotFound 
+            ? <ItemNotFound/>
             : <Loading/>
             }
         </>
