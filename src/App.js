@@ -10,6 +10,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemDetailContainer from './components/ItemDetailContainer';
 import ItemNotFound from './components/ItemNotFound';
 import CartContext from './context/CartContext';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -30,6 +32,7 @@ function App() {
         <Footer/>
         </BrowserRouter>
       </CartContext>
+      <ToastContainer />
     </>
   );
 }

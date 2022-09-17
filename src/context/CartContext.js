@@ -1,4 +1,5 @@
 import React, {createContext, useState} from "react";
+import {toast} from "react-toastify";
 
 export const Context = createContext();
 
@@ -8,7 +9,8 @@ export default function CartContext({children}) {
 
     function addItem(item, title, quantity, price, picture){
         let seEncuentra = cart.some(e => e.item == item);
-        seEncuentra ? window.alert("Este producto ya se encuentra cargado") : setCart([...cart, {item, title, quantity, price, picture}]);
+        seEncuentra ? toast.warn("El producto ya se encuentra cargado", {autoClose: 1000})
+        : toast.success("El producto se cargo correctamente", {autoClose: 1000}) && setCart([...cart, {item, title, quantity, price, picture}]);
     }
 
     function removeItem(itemId){
