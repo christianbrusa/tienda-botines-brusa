@@ -24,6 +24,7 @@ export default function ItemList({Products, setProducts}) {
         <div className= "goncy" style={{display:"grid", gridTemplateColumns: "repeat(auto-fill,minmax(250px,1fr))", marginTop:"-20px"}}>
         {Products.map(prod => (
             <Item
+                key={prod.id}
                 id={prod.id}
                 title={prod.title}
                 price={prod.price}
