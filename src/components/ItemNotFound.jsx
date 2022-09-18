@@ -6,7 +6,7 @@ export default function ItemNotFound() {
         //Fragments
         <>
             <div id="error">
-                <div class="errorText">
+                <div className="errorText">
                     <h1>Error 404</h1>
                     <h4>Página no encontrada.</h4>
                 </div>

@@ -28,8 +28,8 @@ export default function SearchBar() {
     return (
         //Fragments
         <>
-            <div class="search-bar">
-                <input type="search" class="form-control" placeholder="Buscar" onChange={(e) => filterText(e)}/>
+            <div className="search-bar">
+                <input type="search" className="form-control" placeholder="Buscar" onChange={(e) => filterText(e)}/>
             </div>
         </>
     )

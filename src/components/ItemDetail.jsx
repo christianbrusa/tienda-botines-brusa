@@ -34,7 +34,7 @@ export default function ItemDetail({producto}) {
     return (
         //Fragments
         <>
-            <main class="container">
+            <main className="container">
                 <BackArrow/>
                 <div>
                     <ul>
@@ -47,10 +47,10 @@ export default function ItemDetail({producto}) {
                         ))}
                     </ul>
                 </div>
-                <div class="left-column">
+                <div className="left-column">
                     <img src={producto.gallery[imgSelec]} alt="" style={{width:"400px", paddingTop:"35px"}}/>
                 </div>
-                <div id="right" class="right-column">
+                <div id="right" className="right-column">
                     <h2>{producto.title}</h2>
                     <br></br>
                     <h4>${producto.price}</h4>

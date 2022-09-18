@@ -19,8 +19,8 @@ export default function Cart() {
                 <EmptyCart />
                 ||
                 cart.length > 0 &&
-                <div class="row g-0">
-                    <div class="col-sm-6 col-md-8">
+                <div className="row g-0">
+                    <div className="col-sm-6 col-md-8">
                         <Container fluid className="product-list">
                             <Row id="first-row">
                                 <Col md={5}><h6>Producto</h6></Col>
@@ -49,7 +49,7 @@ export default function Cart() {
                             }
                         </Container>
                     </div>
-                    <div class="col-6 col-md-4">
+                    <div className="col-6 col-md-4">
                         <Container className="container-checkout">
                             <Form id="form-checkout">
                                 <Row>
