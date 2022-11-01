@@ -1,11 +1,12 @@
+@import "./Style.css";
+
 .navBar{
-    background-color: rgba(25, 25, 26, 0.7);
+    background-color: var(--fondo-navbar);
 }
 
 .navBar .container .brand{
     margin-left: 1.3rem;
     font-size: 30px;
-    font-family: "Bahnschrift SemiBold";
     color: white;
 }
 
@@ -14,7 +15,7 @@
 }
 
 #navbarScrollingDropdown{
-    color: rgb(207, 204, 204);
+    color: var(--gris-plata);
 }
 
 #title{
@@ -29,13 +30,16 @@
 }
 
 #buttons{
-    color: rgb(207, 204, 204) !important;
+    color: var(--titulo-marca) !important;
     text-decoration: none;
-    font-family: "Bahnschrift";
     font-size: 17px;
 }
 
 #buttons:hover{
     font-size: 20px;
-    color: rgb(222, 221, 221) !important;
+    color: var(--gris-claro) !important;
+}
+
+#logo-login{
+    margin: 0px;
 }

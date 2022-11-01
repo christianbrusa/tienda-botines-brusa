@@ -1,3 +1,5 @@
+@import "./Style.css";
+
 .products{
     margin-top: 0px;
     padding: 20px;
@@ -5,7 +7,7 @@
 }
 
 .products :hover{
-    border-top-color: rgb(74, 198, 74);
+    border-top-color: var(--verde-claro);
     border-top-width: 3px;
 }
 

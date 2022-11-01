@@ -1,3 +1,5 @@
+@import "./Style.css";
+
 .count{
     display: flex !important;
     position: relative;
@@ -30,9 +32,9 @@
 #addToCart{
     color: white;
     border-color: white;
-    background-color: rgb(74, 198, 74);
+    background-color: var(--verde-claro);
 }
 
 #addToCart:hover{
-    background-color: rgb(72, 147, 72);
+    background-color: var(--verde-oscuro);
 }

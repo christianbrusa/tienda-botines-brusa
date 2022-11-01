@@ -1,3 +1,5 @@
+@import "./Style.css";
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -25,24 +27,20 @@
 
 h2{
     margin-top: 30px;
-    color: rgb(69, 69, 69);
+    color: var(--gris-oscuro);
 }
 
 h4{
-    color: rgb(116, 115, 115);
+    color: var(--gris-semiclaro);
 }
 
 p{
     text-align: left;
-    color: rgb(69, 69, 69);
+    color: var(--gris-oscuro);
 }
 
 #right{
     padding-left: 40px;
-}
-
-h2, h4, p{
-    font-family: "Bahnschrift";
 }
 
 #imageGallery{
@@ -52,7 +50,7 @@ h2, h4, p{
     width: 100px;
     height: 100px;
     margin-right: 30px;
-    border: 0.09rem solid rgb(180, 180, 180);
+    border: 0.09rem solid var(--gris-plata);
     margin-bottom: 7px;
 }
 
@@ -63,10 +61,10 @@ li{
 #FinishCart{
     color: white;
     border-color: white;
-    background-color: rgb(210, 64, 64);
+    background-color: var(--rojo-claro);
     margin-left: 25px;
 }
 
 #FinishCart:hover{
-    background-color: rgb(141, 21, 45);
+    background-color: var(--rojo-oscuro);
 }

@@ -1,6 +1,7 @@
+@import "./Style.css";
+
 body{
-    /*font-family: 'Lato', sans-serif;*/
-    color: #888;
+    color: var(--gris-semiclaro);
     margin: 0;
 }
 
@@ -26,13 +27,12 @@ body{
 }
 
 @keyframes type{
-    from{box-shadow: inset -3px 0px 0px #888;}
+    from{box-shadow: inset -3px 0px 0px var(--gris-semiclaro);}
     to{box-shadow: inset -3px 0px 0px transparent;}
 }
 
 .errorText h4{
-    color: #888;
-    font-family: 'Bahnschrift';
+    color: var(--gris-semiclaro);
     font-weight:300;
     font-size: 30px;
 }

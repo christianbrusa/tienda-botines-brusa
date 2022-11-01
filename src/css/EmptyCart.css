@@ -1,6 +1,7 @@
+@import "./Style.css";
+
 #empty-list-text{
-    font-family: 'Bahnschrift';
-    color: rgb(69, 69, 69);
+    color: var(--gris-semiclaro);
 }
 
 .empty-list{
@@ -14,9 +15,9 @@
 #back-to-home{
     color: white;
     border-color: white;
-    background-color: rgb(74, 198, 74);
+    background-color: var(--verde-claro);
 }
 
 #back-to-home:hover{
-    background-color: rgb(72, 147, 72);
+    background-color: var(--verde-oscuro);
 }

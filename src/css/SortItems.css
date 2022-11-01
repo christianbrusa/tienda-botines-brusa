@@ -1,12 +1,14 @@
+@import "./Style.css";
+
 #bg-nested-dropdown{
     margin-top: 20px;
     margin-left: 20px;
 }
 
 #bg-nested-dropdown:hover{
-    background-color: rgb(74, 198, 74);
+    background-color: var(--verde-claro);
 }
 
 #DropdownItem:active{
-    background-color: rgb(74, 198, 74);
+    background-color: var(--verde-claro);
 }

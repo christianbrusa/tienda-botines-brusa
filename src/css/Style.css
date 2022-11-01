@@ -1,0 +1,18 @@
+/*propiedades generales*/
+*{
+    font-family: "Bahnschrift";
+}
+
+/*Colores*/
+:root{
+    --fondo-navbar: rgba(25, 25, 26, 0.7);
+    --titulo-marca: rgb(211, 209, 209);
+    --verde-claro: rgb(74, 198, 74);
+    --verde-oscuro: rgb(72, 198, 72);
+    --gris-claro: rgb(236, 235, 235);
+    --gris-plata:rgb(180, 180, 180);
+    --gris-semiclaro: rgb(116, 115, 115);
+    --gris-oscuro: rgb(69, 69, 69);
+    --rojo-claro: rgb(210, 64, 64);
+    --rojo-oscuro:rgb(141, 21, 45);
+}
