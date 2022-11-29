@@ -3,7 +3,7 @@ import CartWidget from "./CartWidget";
 import SearchBar from "./SearchBar";
 import React, { Component } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav, Container, Button, FormControl } from 'react-bootstrap';
+import { Navbar, Nav, Container, Button, FormControl, Carousel } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'></link>
 
@@ -40,19 +40,40 @@ export default class NavBar extends Component {
                             </Nav>
                             <SearchBar />
                             <CartWidget />
-                            <Button variant="light" style={{ marginLeft: 12.5, fontFamily: "Bahnschrift" }}>Login</Button>
+                            <img src="https://res.cloudinary.com/dycoseuyv/image/upload/v1662420558/login_nwihpy.png" alt=""
+                                width="35"
+                                height="35"
+                                id="logo-login"
+                            />
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
-                <div>
-                    <img
-                        src="https://res.cloudinary.com/dycoseuyv/image/upload/v1648259988/obrablue_2_gkgt6n.jpg"
-                        width="100%"
-                        height="190"
-                        className="banner"
-                        alt=""
-                    />
-                </div>
+                <Carousel interval={2000}>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src="https://res.cloudinary.com/dycoseuyv/image/upload/v1669674677/kross-test-1_cz40qq.jpg"
+                            alt="First slide"
+                            height="350"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src="https://res.cloudinary.com/dycoseuyv/image/upload/v1669686519/nike-magista-bw-test-1_epzcj3.jpg"
+                            alt="Second slide"
+                            height="350"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src="https://res.cloudinary.com/dycoseuyv/image/upload/v1669687490/dybala-black-test-1_qqqsio.jpg"
+                            alt="Second slide"
+                            height="350"
+                        />
+                    </Carousel.Item>
+                </Carousel>
             </div>
         );
     }
