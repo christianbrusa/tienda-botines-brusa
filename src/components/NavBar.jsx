@@ -48,7 +48,7 @@ export default class NavBar extends Component {
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
-                <Carousel interval={2000}>
+                <Carousel interval={2000} indicators={false} nextIcon={false} prevIcon={false}>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
