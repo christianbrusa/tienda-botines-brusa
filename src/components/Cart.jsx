@@ -10,7 +10,7 @@ export default function Cart() {
     //console.log(cart)
 
     let totalPurchase = cart.reduce((initialValue, actualValue) => initialValue + actualValue.quantity * actualValue.price, 0);
-
+    window.scrollTo(0, 0);
     return (
         //Fragments
         <>

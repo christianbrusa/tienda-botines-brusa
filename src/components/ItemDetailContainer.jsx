@@ -17,7 +17,7 @@ export default function ItemDetailContainer() {
     const collectionRef = collection(db, "products");
 
     useEffect(() => {
-
+        window.scrollTo(0, 0);
         getDocs(collectionRef).then((res) => {
         let collection = res.docs.map((item) => ({id: item.id, ...item.data()}));
         selectProduct = collection.filter(item => item.id == id);
